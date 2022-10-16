@@ -63,7 +63,10 @@ stream = Mystream(bearerToken)
 # add them as rules which basically means we'll be  searching for tweets that contain at
 # least one of these words
 for term in search_terms:
+    # check this: limiting the number of requests being sent
+    # for term in search_terms(40):
     stream.add_rules(tweepy.StreamRule(term))
+    time.sleep(5)  # added
 
 # below we excluding tweets that are being reffered
 # and that aslo will give the class to the referenced tweets property
