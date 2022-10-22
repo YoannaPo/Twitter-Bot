@@ -11,10 +11,13 @@
 
 ## Requirements
 
-Twitter developer account
-Python3.8
-Python virtual environment
-Hosting Server or Cloud
+* Twitter Developer Account 
+(Sign up for a separate account for your Twitter Bot and then apply for Twitter Developer Account - https://developer.twitter.com/en)
+* Python3.8
+* Python virtual environment
+* Hosting Server or Cloud
+
+
 
 ## General info
 
@@ -22,3 +25,4 @@ Hosting Server or Cloud
 
 
 ## Status
+Project is:  _in_progress_
