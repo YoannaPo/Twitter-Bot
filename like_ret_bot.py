@@ -26,9 +26,11 @@ auth = tweepy.OAuth1UserHandler(
     apiKey, apiKeySecret, accessToken, accessTokenSecret)
 api = tweepy.API(auth)
 
-# if you add ["firstWord", "secondWord"] bot will be looking for specysfic words in a post/user name bot not as #hastag
+# If you add ["firstWord", "secondWord"] bot will be looking for specyfic words in a post/user name bot not as #hastag
 search_terms = ["#firstWord", "#secondWord"]
 
+# By adding: (-is:retweet -is:reply) to tweepy.StreamRule, you're excluding the tweets that're retweeted,
+# and tweets which are a reply
 # rule = tweepy.StreamRule(
 #     "(#firstWord" OR "#secondWord OR #beauty) (-is:retweet -is:reply)")
 
